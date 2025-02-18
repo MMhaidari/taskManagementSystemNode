@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "baseUrl": "./src",
+        "paths": {
+            "*": ["node_modules/*"],
+            "@controllers/*": ["controllers/*"],
+            "@models/*": ["models/*"],
+            "@utils/*": ["utils/*"]
+        },
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "typeRoots": ["./node_modules/@types"],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+}
